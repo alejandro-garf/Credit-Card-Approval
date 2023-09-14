@@ -35,7 +35,7 @@ int main() {
       std::cout << "You are eligible for the Gold Tuffy Card." << std::endl;
       std::cout << "Thank you for using our program, please come again!"
                 << std::endl;
-    } else if (user_credit_score < 850) {
+    } else if (user_credit_score < 851) {
       std::cout << "You are eligible for the Platinum Tuffy Card." << std::endl;
       std::cout << "Thank you for using our program, please come again!"
                 << std::endl;
