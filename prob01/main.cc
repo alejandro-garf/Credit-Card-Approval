@@ -1,17 +1,29 @@
-// TODO: please fill in below.
-// <Your name>
-// <Your section number> (e.g. CPSC 121L-01)
-// <Date>
-// <Your csu.fullerton.edu email>
-// <Your GitHub username>
+// Alejandro Fonseca
+// CPSC 121L-06
+// 9/13/2023
+// gfon@csu.fullerton.edu
+// alejandro-garf
 //
 // Lab 2-1
-// If it is a pair programming lab please specify partner below.
-// Partner: @peteranteater
 
 #include <iostream>
 
 int main() {
-  // TODO: Check passenger heights before riding the rollercoaster.
+  const int min_height = 55;
+  int user_height = 0;
+
+  std::cout << "You must be at least 55 inches to safely ride the TuffyTwister."
+            << std::endl;
+  std::cout << "Please enter yout height in inches: ";
+  std::cin >> user_height;
+
+  if (user_height >= min_height) {
+    std::cout << "Congratulations! You are tall enough to ride!" << std::endl;
+  } else {
+    std::cout << "Safety is our first priority. Unfortunately, we can't let "
+                 "you ride yet."
+              << std::endl;
+  }
+
   return 0;
 }
